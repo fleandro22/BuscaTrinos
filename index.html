@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Busca Twits</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- iPhone -->
+    <link href="http://lungo.tapquo.com/resources/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+    <link href="http://lungo.tapquo.com/resources/startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+    <!-- iPhone (Retina) -->
+    <link href="http://lungo.tapquo.com/resources/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+    <link href="http://lungo.tapquo.com/resources/startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPhone 5 -->
+    <link href="http://lungo.tapquo.com/resources/startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPad -->
+    <link href="http://lungo.tapquo.com/resources/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+    <link href="http://lungo.tapquo.com/resources/startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <link href="http://lungo.tapquo.com/resources/startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+    <!-- iPad (Retina) -->
+    <link href="http://lungo.tapquo.com/resources/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+    <link href="http://lungo.tapquo.com/resources/startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="http://lungo.tapquo.com/resources/startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- Lungo - Stylesheets -->
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
+    <link rel="stylesheet" href="components/lungo/lungo.theme.default.css">
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body class="app">
+
+
+   <section id="main" data-transition="slide">
+        <header  class="">
+            <nav class="left box">
+
+                <a href="#main" data-router="section" data-icon="home"></a>
+            </nav>
+             <div class="centered title with-subtitle">
+                BuscaTwits
+                <small class="subtitle">@fleandrovelasco</small>
+            </div>
+        </header>
+
+
+        <div class="centered title with-subtitle">
+                Lungo
+                <small class="subtitle">HTML5 Cross-Device Framework</small>
+            </div>
+
+        <footer class="">
+            <nav>
+                <a href="#" class="current"><span class=" arroa">@</span></a>
+                <a href="#" ><span class="hast">#</span></a>
+
+            </nav>
+        </footer>
+
+        <article id="main-article" class="active list indented scroll">
+
+            <form id="" >
+                <input type="text" placeholder="Usuario" id="txt_buscar" />
+                <a href="#" data-icon=" brand twitter" class="button big twitter" id="btn_buscar">Buscar</a>
+            </form>
+
+        </article>
+
+
+
+
+    </section>
+
+    <section id="buscartw" data-pull="normal" data-transition="slide">
+        <header  class="">
+            <nav class="left box" id="atras">
+                <a href="#" data-label="Atras"></a>
+            </nav>
+            <div class="centered title with-subtitle">
+                Twits
+            </div>
+
+        </header>
+
+        <article id="mostratw" class="list">
+
+            <div id="container">
+                 <div id="ultimo_tweet" class="margined"></div>
+
+            </div>
+
+
+
+
+        </article>
+
+    </section>
+
+    <aside id="features">
+        <header data-title="Options"></header>
+        <article class="list">
+            <ul>
+                <li class="">
+                    <a href="#">
+                        <strong>Twitter</strong>
+                    </a>
+                </li>
+                <li>
+
+            </ul>
+        </article>
+    </aside>
+
+
+
+     <!--//////////////////////////////    SCROLL  ////////////////////////////////////////// -->
+    <script src="js/scroll/overthrow.js" type="text/javascript"></script>
+    <style>
+        .overthrow-enabled .overthrow {overflow: auto; -webkit-overflow-scrolling: touch;}
+        .overthrow-enabled #content.overthrow {height: 800px; width: 100%;}
+        #content {margin: 0; padding: 0;}
+    </style>
+    <!-- Lungo - Dependencies -->
+    <!-- <script src="cordova-2.0.0.js"></script> -->
+    <script src="components/quojs/quo.js"></script>
+    <script src="components/lungo/lungo.js"></script>
+    <script src="buscatw.js"></script>
+    <!-- Lungo - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'prueba'
+        });
+    </script>
+</body>
+</html>

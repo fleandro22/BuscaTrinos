@@ -1,0 +1,33 @@
+#list_tw li a{
+
+	color:#099;
+	font-weight:normal;
+	display: inline;
+}
+
+
+.arroa{
+
+	color:#464646;
+	font-size:27px;
+	position: absolute;
+	top: 18%;
+	left: 17%;
+	font-weight: bold;
+	font-family: sans-serif;
+
+}
+
+
+.hast{
+	clear: both;
+	font-size:30px;
+	color: #464646;
+	position: absolute;
+	top: 20%;
+	right:  25%;
+	font-weight: bold;
+	font-family: cursive;
+
+}
+
